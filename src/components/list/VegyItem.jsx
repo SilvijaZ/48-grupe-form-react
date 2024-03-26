@@ -38,12 +38,12 @@ export function VegyItem(props){
             <span className={style.vegyTitle}>{name}</span>
             <div className={style.controls}>
                 <button onClick={handleCountMinus} className={style.btn}>-</button>
-                <span className={style.count}>{count + 'vnt'}</span>
+                <span className={style.count}>{count + ' vnt'}</span>
                 <button onClick={handleCountPlius} className={style.btn}>+</button>
             </div>
             <div className={style.controls}>
                 <span className={style.count}>{price}</span>
-                <span className={style.count}>{getTotalPrice() + 'Eur'}</span>
+                <span className={style.count}>{getTotalPrice() + ' Eur'}</span>
             </div>
         </li>
     );
