@@ -27,9 +27,3 @@ export function List(){
         </ul>
     );
 }
-
-
-/*
-<N.D pakeisti masyvas turi buti is objektu, obejkte yra prekes pavadinimas, darzovės pavadinimas, ir jos turi matavimo vieneta, tai reiskia kilogramai arba vnt. kaina uz vieneta, ir atitinkamai kaina eurais.
-parametrus visus pasiduodat i ta VegyItem ir priima visa info, priima pavadinimas, matavimo vieneta, kaina ir count keiciant jis turi automatikskai salia sone pasakyti lentele pasidayrti turimas kiekis ir total, kiek moketi uz bulves...
-*/
