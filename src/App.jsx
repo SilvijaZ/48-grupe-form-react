@@ -9,6 +9,7 @@ import { PageVegetables } from './pages/PageVegetables';
 import { Page404 } from './pages/Page404';
 import { PageVegetablesInner } from './pages/PageVegetablesInner';
 import { PageStudents } from './pages/PageStudents';
+import { PageProducts } from './pages/PageProducts';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route index path='/' element={<PageHome />} />
           <Route path='/basketball' element={<PageBasketball />} />
           <Route path='/students' element={<PageStudents />} />
+          <Route path='/products' element={<PageProducts />} />
           <Route path='*' element={<Page404 />} />
         </Route>
         <Route Component={LayoutWithAds}>
