@@ -1,0 +1,41 @@
+
+{
+    "products": [
+        {
+            "name": "Bulvės",
+            "price": 1.00,
+            "unit": "kg",
+            "isVegetables": true
+        },
+        {
+            "name": "Bananai",
+            "price": 2.50,
+            "unit": "kg",
+            "isVegetables": false
+        },
+        {
+            "name": "Morkos",
+            "price": 0.90,
+            "unit": "kg",
+            "isVegetables": true
+        },
+        {
+            "name": "Avokadai",
+            "price": 3.30,
+            "unit": "vnt",
+            "isVegetables": true
+        },
+        {
+            "name": "Obuoliai",
+            "price": 0.99,
+            "unit": "vnt",
+            "isVegetables": false
+        },
+        {
+            "name": "Ananasas",
+            "price": 1.90,
+            "unit": "kg",
+            "isVegetables": false
+        }
+    ]
+}
