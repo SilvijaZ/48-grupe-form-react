@@ -19,6 +19,9 @@ body > div{
 }
 
 main{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   grid-area: main;
   padding: 2rem;
 }
@@ -77,6 +80,11 @@ aside{
   font-size: 3rem;
 }
 
+.page-title button{
+  font-size: 0.7em;
+  padding: 0.1em 0.3em;
+}
+
 .page-desription{
   font-size: 1.4rem;
 }
@@ -84,5 +92,5 @@ aside{
 .error{
   padding: 2rem;
   border: 0.2rem dashed red;
-  border-radius: ;
+  border-radius: 0.4rem;
 }
