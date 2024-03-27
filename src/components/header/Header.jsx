@@ -10,6 +10,7 @@ export function Header(){
                 <Link to='/'>Home</Link>
                 <Link to='/basketball'>Basketball</Link>
                 <Link to='/vegetables'>Vegetables</Link>
+                <Link to='/students'>Students</Link>
 
                 {/* <a href="/">Home</a>
                 <a href="/basketball">Basketball</a> */}

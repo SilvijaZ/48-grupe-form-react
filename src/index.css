@@ -71,3 +71,18 @@ aside{
    'footer footer'
   ;
 }
+
+
+.page-title{
+  font-size: 3rem;
+}
+
+.page-desription{
+  font-size: 1.4rem;
+}
+
+.error{
+  padding: 2rem;
+  border: 0.2rem dashed red;
+  border-radius: ;
+}
