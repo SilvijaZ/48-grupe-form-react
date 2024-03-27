@@ -2,11 +2,13 @@
 /* eslint-disable no-undef */
 import { useState } from 'react';
 import style from './List.module.css';
+import { Link } from 'react-router-dom';
+import { urlName } from '../../urlName';
 
-export function VegyItem(props){
-    const { name, price } = props;
+export function VegyItem({data}){
+    const { name, price, unit, href } = data;
     
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
 
     const min = 0;
     const max = 20;
@@ -35,16 +37,19 @@ export function VegyItem(props){
 
     return (
         <li className={style.vegy}>
-            <span className={style.vegyTitle}>{name}</span>
+            <span className={style.vegyTitle}>{name}({price}&euro;/{unit})</span>
             <div className={style.controls}>
                 <button onClick={handleCountMinus} className={style.btn}>-</button>
-                <span className={style.count}>{count + ' vnt'}</span>
+                <span className={style.count}>{count} {unit}</span>
                 <button onClick={handleCountPlius} className={style.btn}>+</button>
             </div>
+
             <div className={style.controls}>
-                <span className={style.count}>{price}</span>
-                <span className={style.count}>{getTotalPrice() + ' Eur'}</span>
+                <span className={style.count}>{getTotalPrice()}</span>
             </div>
+
+            <Link to={'/vegetables/' + urlName(href)}>Read more</Link>
         </li>
     );
 }
+

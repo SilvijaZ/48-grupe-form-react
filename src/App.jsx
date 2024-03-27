@@ -1,51 +1,34 @@
 // import './App.css'
 
-import { useState } from "react";
-import { Basketball } from "./components/basketball/Basketball";
-import { List } from './components/list/List';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BasicLayout } from './layout/BasicLayout';
+import { LayoutWithAds } from './layout/LayoutWithAds';
+import { PageHome } from './pages/PageHome';
+import { PageBasketball } from './pages/PageBasketball';
+import { PageVegetables } from './pages/PageVegetables';
+import { Page404 } from './pages/Page404';
+import { PageVegetablesInner } from './pages/PageVegetablesInner';
 
 
 function App() {
-  const [count, setCount] = useState(0);
 
-  // per perpiešia turini: duomuo ir funkcija useState();
- 
-
-  function increment(){
-    setCount(count + 1)
-    // console.log(count);
-  }
-
-  function decrement(){
-    setCount(count - 1)
-    // console.log(count);
-  }
-  
   return (
-    <>
-      <List />
-      <h1>Hooks FTW</h1>
-      <div className="counter">
-        <button onClick={decrement}>-</button>
-        <span>{count}</span>
-        <button onClick={increment}>+</button>
-      </div>
-      <Basketball />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route Component={BasicLayout}>
+          <Route index path='/' element={<PageHome />} />
+          <Route path='/basketball' element={<PageBasketball />} />
+          <Route path='*' element={<Page404 />} />
+        </Route>
+        <Route Component={LayoutWithAds}>
+          <Route path='/vegetables' element={<PageVegetables />} />
+          <Route path='/vegetables/:id' element={<PageVegetablesInner />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
 
-// destructizuoti - isardyti
-// const [a, b] = [10, 2, 8, 6]
-// galim pasiimti a ir b
-// a = 10
-// b = 2
-
-/* 
-const x = useState()
-const a = x[0]
-const b = x[1] 
-*/
+// su :id pagauna visas nuorodas

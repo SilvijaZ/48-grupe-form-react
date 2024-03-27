@@ -10,21 +10,23 @@ export function Basketball(){
 
     
     return (
-        <div className={style.basketball}>
-            <div className={style.screen}>{formatBasketballNumber(score1)}:{formatBasketballNumber(score2)}</div>
-            {/* {score1 < 10 ? '0' : ''}{score1}:{score2 < 10 ? '0': ''}{score2} */}
-            <div className={style.controls}>
-                <div className={style.team}>
-                    <button onClick={()=> setScore1(score1 + 1)} className={style.btn}>+1</button>
-                    <button onClick={()=> setScore1(score1 + 2)} className={style.btn}>+2</button>
-                    <button onClick={()=> setScore1(score1 + 3)} className={style.btn}>+3</button>
-                </div>
-                <div className={style.team}>
-                    <button onClick={()=> setScore2(score2 + 1)} className={style.btn}>+1</button>
-                    <button onClick={()=> setScore2(score2 + 2)} className={style.btn}>+2</button>
-                    <button onClick={()=> setScore2(score2 + 3)} className={style.btn}>+3</button>
+        <>
+            <div className={style.basketball}>
+                <div className={style.screen}>{formatBasketballNumber(score1)}:{formatBasketballNumber(score2)}</div>
+                {/* {score1 < 10 ? '0' : ''}{score1}:{score2 < 10 ? '0': ''}{score2} */}
+                <div className={style.controls}>
+                    <div className={style.team}>
+                        <button onClick={()=> setScore1(score1 + 1)} className={style.btn}>+1</button>
+                        <button onClick={()=> setScore1(score1 + 2)} className={style.btn}>+2</button>
+                        <button onClick={()=> setScore1(score1 + 3)} className={style.btn}>+3</button>
+                    </div>
+                    <div className={style.team}>
+                        <button onClick={()=> setScore2(score2 + 1)} className={style.btn}>+1</button>
+                        <button onClick={()=> setScore2(score2 + 2)} className={style.btn}>+2</button>
+                        <button onClick={()=> setScore2(score2 + 3)} className={style.btn}>+3</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

@@ -1,0 +1,3 @@
+$npm i react-router-dom  instaliuojam biblioteka, dirba su virtualiais puslapiais.
+kai norime naviguoti per nuorodas, ir krepiames i narsykle, o ji iesko per serveri.
+Nustato router, ir grazina koki turi.
