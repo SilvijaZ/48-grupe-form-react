@@ -5,37 +5,43 @@
             "name": "Bulvės",
             "price": 1.00,
             "unit": "kg",
-            "isVegetables": true
+            "isVegetables": true,
+            "image": "url(../../assets/images/bulves.jpg)"
         },
         {
             "name": "Bananai",
             "price": 2.50,
             "unit": "kg",
-            "isVegetables": false
+            "isVegetables": false,
+            "image": "../../assets/images/bananai.jpg"
         },
         {
             "name": "Morkos",
             "price": 0.90,
             "unit": "kg",
-            "isVegetables": true
+            "isVegetables": true,
+            "image": "../../assets/images/morkos.jpg"
         },
         {
             "name": "Avokadai",
             "price": 3.30,
             "unit": "vnt",
-            "isVegetables": true
+            "isVegetables": true,
+            "image": "../../assets/images/avokadai.jpg"
         },
         {
             "name": "Obuoliai",
             "price": 0.99,
             "unit": "vnt",
-            "isVegetables": false
+            "isVegetables": false,
+            "image": "../../assets/images/obuoliai.jpg"
         },
         {
             "name": "Ananasas",
             "price": 1.90,
             "unit": "kg",
-            "isVegetables": false
+            "isVegetables": false,
+            "image": "../../assets/images/ananasas.jpg"
         }
     ]
 }

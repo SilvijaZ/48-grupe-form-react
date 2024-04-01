@@ -10,6 +10,8 @@ import { Page404 } from './pages/Page404';
 import { PageVegetablesInner } from './pages/PageVegetablesInner';
 import { PageStudents } from './pages/PageStudents';
 import { PageProducts } from './pages/PageProducts';
+import { PageRegister } from './pages/PageRegister';
+import { PageMyRegister } from './pages/PageMyRegister';
 
 
 function App() {
@@ -21,7 +23,9 @@ function App() {
           <Route index path='/' element={<PageHome />} />
           <Route path='/basketball' element={<PageBasketball />} />
           <Route path='/students' element={<PageStudents />} />
+          <Route path='/register' element={<PageRegister />} />
           <Route path='/products' element={<PageProducts />} />
+          <Route path='/myregister' element={<PageMyRegister />} />
           <Route path='*' element={<Page404 />} />
         </Route>
         <Route Component={LayoutWithAds}>

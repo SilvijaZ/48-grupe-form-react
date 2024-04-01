@@ -1,0 +1,42 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 20rem;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label{
+    font-size: 1.1rem;
+    font-style: italic;
+    background-color: rgb(246, 179, 227)
+}
+
+.input{
+    padding: 0.2em 0.5em;
+    font-size: 1.3rem;
+    line-height: 1.2em;
+    background-color: rgb(192, 206, 255);
+}
+
+.button{
+    padding: 0.2em 0.5em;
+    font-size: 1.3rem;
+    background-color: rgb(192, 206, 255);
+    border-radius: 1em;
+}
+
+.error{
+    color: rgb(142, 29, 121);
+    background-color: aliceblue;
+    padding: 0.2em 0.5em;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 24px;
+    margin-top: 10px;
+}

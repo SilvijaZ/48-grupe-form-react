@@ -11,7 +11,9 @@ export function Header(){
                 <Link to='/basketball'>Basketball</Link>
                 <Link to='/vegetables'>Vegetables</Link>
                 <Link to='/students'>Students</Link>
+                <Link to='/register'>Register</Link>
                 <Link to='/products'>Products</Link>
+                <Link to='/myregister'>My Register</Link>
 
                 {/* <a href="/">Home</a>
                 <a href="/basketball">Basketball</a> */}
