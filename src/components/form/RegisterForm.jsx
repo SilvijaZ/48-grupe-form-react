@@ -140,7 +140,3 @@ export function RegisterForm(){
 
 
 
-// Products susitvarkyk data, pakeisk stilius, idek nuotraukas darzoviu, ir pabaigoje padaryk prideti 
-//i krepseli ir sudek suma.
-// pasidaryk Register form su savo stiliumi... paiimk ir likvidacijas!!!
-// N.D. padaryk
